@@ -66,6 +66,7 @@ contract Guess_Game {
         Game();
     }
 
+    // The Game Logic, this internal function is called whenever a guess is made
     function Game() internal {
         uint guess = player_structs[msg.sender].guess;
         uint attempts = player_structs[msg.sender].trials;
